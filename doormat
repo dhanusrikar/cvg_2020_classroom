@@ -1,0 +1,19 @@
+c = ".|."
+b = "-"
+n = input("")
+try:
+    n = n.split()
+    n = int(n[0])
+except:
+    print("Invalid")
+    quit()
+m = int(n/2)
+#top design
+for i in range(m):
+    print((b*(3*(m-i))) + (c * (2*i + 1)) + (b*(3*(m-i))))
+#welcome
+q = (n*3 - 7)//2
+print((b * q) + "WELCOME" + (b * q))
+#bottom design
+for i in reversed(range(m)):
+    print((b*(3*(m-i))) + (c * (2*i + 1)) + (b*(3*(m-i))))
