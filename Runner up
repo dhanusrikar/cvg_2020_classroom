@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr = sorted(arr)
+    n = list()
+    for i in arr:
+        if i in n: continue
+        n.append(i)
+    n = sorted(n)
+    print(n[len(n)-2])
