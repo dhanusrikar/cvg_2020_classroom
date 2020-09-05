@@ -1,0 +1,10 @@
+def wrap(string, max_width):
+    new_string = ""
+    count = 0
+    r = int((len(string)/max_width))
+    for i in range(r):
+        x = max_width * i
+        new_string += string[x: (x+max_width)] + "\n"
+    x = max_width * (i + 1)
+    new_string += string[x:]
+    return new_string
