@@ -1,0 +1,12 @@
+name = input("")
+try:
+    num = int(name)
+except:
+    print("Invalid input")
+    quit()
+
+l = ""
+for i in range(num):
+    x = str(i+1)
+    l = l + x
+print(l)
