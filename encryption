@@ -1,0 +1,19 @@
+imoprt math
+s = input()
+s = s.replace(" ", "")
+l = len(s)
+rootl = math.sqrt(l)
+col = row = int(rootl)
+if(l > col * row):
+    col += 1
+    if(l > col * row):
+        row += 1    
+x = ""
+if(col > row):
+    row += 1
+print(s, l, row, col)
+for i in range(col):
+    output = s[i::row+1]
+    print(output)
+    x = x + " " + output
+print(x[1:])
