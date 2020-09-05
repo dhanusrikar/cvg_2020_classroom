@@ -1,0 +1,8 @@
+def is_leap(num):
+    if num % 4 == 0:
+        if num % 400 == 0:
+            return True
+        if num % 100 == 0:
+            return False
+        return True
+    return False
