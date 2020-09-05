@@ -1,0 +1,12 @@
+def merge_the_tools(string, num):
+
+    l = int(len(string)/num)
+    for i in range(l):
+        bag = dict()
+        new_word = ""
+        word = string[num*i:num*(i+1)]
+        for r in range(num):
+            bag[word[r]] = bag.get(word[r], 0) + 1
+        for key in bag:
+            new_word += key
+        print(new_word)
